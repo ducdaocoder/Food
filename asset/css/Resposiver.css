@@ -1,0 +1,184 @@
+/* BREAK POINT */
+
+/* PC */
+@media (min-width:1024px) {
+    #menu, .top-three .icon-menu{
+        display: none;
+    }
+
+    #header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+ 
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1024px) {
+    #header {
+        overflow: hidden;
+    }
+   
+    .left a {
+        background-color: #ccc;
+    }
+   
+   
+    .left .icon-menu {
+        font-size: 20px;
+        background-color: #ccc;
+        padding: 10px 10px;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+   .left a:hover , .right a:hover {
+    background-color: #757775;
+   }
+   
+    #slider {
+        margin: 100px 20px;
+    }
+   
+    .section-img {
+        width: 100%;
+    }
+   
+    .Content-about {
+        padding-top: 0;
+        margin: 0;
+    }
+   
+     .About-text {
+       width: 100%;
+    }
+   
+    .img-about {
+        display: none;
+    }
+   
+    /* 02 */
+    .content-our {
+        margin: 0;
+    }
+   
+    .text-out {
+        width: 100%;
+    }
+   
+    .img-2 {
+        width: 100%;
+    }
+    
+    /* 03 */
+    .contact {
+        margin: 25px;
+    }
+   
+}
+
+/* Mobile */
+@media (max-width:740px) {
+    #header {
+        overflow: hidden;
+    }
+  .top-three {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  #menu {
+      display: none;
+  }
+
+
+ .left a {
+     background-color: #ccc;
+ }
+
+ .right a{
+     display: block;
+ }
+
+ .right  {
+     display: block;
+     width: 100%;
+     height: auto;
+     text-align: center;
+     left: 100%;
+     background-color: #ccc;
+     transition: 0.5s;
+ }
+
+ .top-three .icon-menu {
+     font-size: 20px;
+     background-color: #ccc;
+     padding: 10px 10px;
+     margin-top: 7px;
+     cursor: pointer;
+     display: block;
+     display:;
+ }
+
+ .left a:hover , .right a:hover {
+    background-color: #757775;
+    color: #fff;
+    text-transform: uppercase;
+   }
+
+   #menu:checked~.right {
+       position: absolute;
+       left: 0;
+       transition: 0.7s;
+       margin: 0 20px;
+   }
+
+ #slider {
+     margin: 100px 20px;
+ }
+
+ .section-img {
+     width: 100%;
+ }
+
+ .Content-about {
+     padding-top: 0;
+     margin: 0;
+ }
+
+  .About-text {
+    width: 100%;
+ }
+
+ .img-about {
+     display: none;
+ }
+
+ /* 02 */
+ .content-our {
+     margin: 0;
+ }
+
+ .text-out {
+     width: 100%;
+ }
+
+ .img-2 {
+     width: 100%;
+ }
+ 
+ /* 03 */
+ .contact {
+     margin: 25px;
+ }
+}
+
+/* 
+    PC: >= 1024px
+    Tablet: >=740px & <1024px
+    Mobile: < 740px
+*/
